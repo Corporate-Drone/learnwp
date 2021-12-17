@@ -8,9 +8,23 @@ function load_scripts(){
 }
 add_action( 'wp_enqueue_scripts', 'load_scripts' );
 
-register_nav_menus(
-	array(
-		'my_main_menu' => 'Main Menu',
-		'footer_menu' => 'Footer Menu'
-	)
-);
+
+// Main configuration function
+function learnwp_config(){
+
+	// Registering our menus
+	register_nav_menus(
+		array(
+			'my_main_menu' => 'Main Menu',
+			'footer_menu' => 'Footer Menu'
+		)
+	);
+
+	$args = array(
+		'height' => 225,
+		'width' => 1920
+	);
+	add_theme_support( 'custom-header', $args );
+
+}
+add_action( 'after_setup_theme', 'learnwp_config', 0 );
