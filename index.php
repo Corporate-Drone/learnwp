@@ -4,20 +4,10 @@
 
 	<div class="content-area">
 		<main>
-			<section class="slide">
-				<div class="container">
-					<div class="row">Slide</div>
-				</div>
-			</section>
-			<section class="services">
-				<div class="container">
-					<div class="row">Services</div>
-				</div>				
-			</section>
 			<section class="middle-area">
 				<div class="container">
 					<div class="row">
-						<aside class="sidebar col-md-3">Sidebar</aside>
+						
 						<div class="news col-md-9">
 							<?php 
 
@@ -26,7 +16,7 @@
 								// While have posts, show them to us
 								while( have_posts() ): the_post();
 
-								// Require the file which is at template-parts/content.php
+								// Require the file which is at template-parts/content.php (by default)
 								get_template_part( 'template-parts/content', get_post_format() );
 
 							 	endwhile;
@@ -37,7 +27,17 @@
 
 							<?php endif; ?>
 
-						</div>							
+						</div>
+						<aside class="sidebar col-md-3 h-100">
+
+							<?php 
+
+							// Require a file called sidebar-blog.php
+							get_sidebar( 'blog' ); 
+
+							?>
+								
+						</aside>							
 					</div>
 				</div>
 			</section>
