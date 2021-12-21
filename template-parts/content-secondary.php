@@ -1,8 +1,10 @@
 <article <?php post_class( array( 'class' => 'secondary' ) ); ?>>
-	<h2><?php the_title(); ?></h2>
+
 	<div class="thumbnail">
-		<?php the_post_thumbnail( 'large', array( 'class' => 'img-fluid' ) ); ?>
+		<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'large', array( 'class' => 'img-fluid' ) ); ?></a>
 	</div>
+
+	<a href="<?php the_permalink(); ?>"><h2><?php the_title(); ?></h2></a>
 	
 	<div class="meta-info">
 		<p>

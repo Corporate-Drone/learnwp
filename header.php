@@ -11,8 +11,8 @@
 		<section class="top-bar">
 			<div class="container">
 				<div class="row">
-					<div class="social-media-icons col-xl-10 col-md-8 col-sm-8 col-6">Social Icons</div>
-					<div class="search col-xl-2 col-md-4 col-sm-4 col-6 text-right">Search</div>					
+					<div class="social-media-icons col-xl-9 col-md-7 col-sm-7 col-6">Social Icons</div>
+					<div class="search col-xl-3 col-md-5 col-sm-5 col-6 text-right"><?php get_search_form(); ?></div>					
 				</div>
 			</div>
 
