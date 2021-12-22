@@ -13,6 +13,10 @@ h4{ font-size: 18px; margin-top: 0; }
 /* Top Bar Section */
 .top-bar{ background: #b9121b; color: #fff; padding: 15px 0; }
 
+/* Social Widgets */
+.social-media-icons ul{ padding: 0; margin: 0; }
+.social-media-icons ul li{ list-style-type: none; display: inline; margin: 0 5px 0; }
+
 /* Header - Main Menu */
 .menu-area{ background: #f3f3f3; padding: 15px 0; }
 .main-menu ul{ list-style: none; padding: 0; margin: 0; font-size: 28px; }
@@ -20,9 +24,6 @@ h4{ font-size: 18px; margin-top: 0; }
 .main-menu ul li:last-child{ margin: 0; }
 .main-menu ul li a{ text-transform: uppercase; color: #4c1b1b; text-decoration: none;}
 .main-menu ul  li.current-menu-item a{ color:#e58888; }
-
-/* Slider */
-.slide{ padding: 25px 0; }
 
 /* Services */
 .services{ background: #4c1b1b; padding: 25px 0; color: #fefefe; }
@@ -38,6 +39,14 @@ h4{ font-size: 18px; margin-top: 0; }
 
 /* Middle Area - Sidebar */
 .sidebar{ background: #f6e497; padding: 20px; margin: 0 0 30px;  }
+
+/* Middle Area - Sidebar - Contact Form 7 */
+.wpcf7 input[type="text"],
+.wpcf7 input[type="email"],
+.wpcf7 textarea
+{
+    width: 100%;
+}
 
 /* Middle Area - Featured News */
 .home .news .format-image h2, .home .news .format-video h2, .home .news .format-standard h2 { color: #000; background: transparent; display: inline-block; padding: 10px 0 5px; font-weight: bold; } 
