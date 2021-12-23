@@ -3,7 +3,11 @@
 		<main>
 			<section class="slide">
 				<div class="container">
-					<div class="row">Slide</div>
+					<div class="row">
+					<?php
+						echo do_shortcode('[smartslider3 slider="2"]');
+					?>
+					</div>
 				</div>
 			</section>
 			<section class="services">
@@ -117,7 +121,11 @@
 			</section>
 			<section class="map">
 				<div class="container">
-					<div class="row">Map</div>
+					<div class="row">
+					<?php
+						echo do_shortcode('[leaflet-map zoom=10 lat=48.855 lng=2.35 zoomcontrol !detect-retina]');
+					?>
+					</div>
 				</div>				
 			</section>
 		</main>
