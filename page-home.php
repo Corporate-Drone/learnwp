@@ -53,7 +53,7 @@
 			<section class="middle-area">
 				<div class="container">
 					<div class="row">
-						<aside class="sidebar col-md-3 h-100">
+						<aside class="sidebar col-md-4 h-100">
 
 							<?php 
 							
@@ -63,8 +63,9 @@
 							?>
 								
 						</aside>
-						<div class="news col-md-9">
+						<div class="news col-md-8">
 						<div class="container">
+							<h1>Latest News</h1>
 							<div class="row">
 								<?php 
 

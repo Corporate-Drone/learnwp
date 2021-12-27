@@ -26,10 +26,10 @@
 
 							 <div class="row">
 							 	
-								<div class="pages col-md-6 text-left">
+								<div class="pages col-6 text-left">
 									<?php previous_posts_link("<< Newer posts"); ?>
 								</div>
-								<div class="pages col-md-6 text-right">
+								<div class="pages col-6 text-right">
 									<?php next_posts_link("Older posts >>"); ?>
 								</div>
 
@@ -56,11 +56,6 @@
 						</aside>							
 					</div>
 				</div>
-			</section>
-			<section class="map">
-				<div class="container">
-					<div class="row">Map</div>
-				</div>				
 			</section>
 		</main>
 	</div>

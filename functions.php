@@ -1,5 +1,8 @@
 <?php 
 
+// Requiring Theme Customizer
+require get_template_directory() . '/inc/customizer.php'; 
+
 // Including stylesheet and script files
 function load_scripts(){
 	wp_enqueue_script( 'bootstrap-js', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js', array( 'jquery' ), '4.0.0', true );
@@ -28,6 +31,10 @@ function learnwp_config(){
 	add_theme_support( 'post-thumbnails' );
 	add_theme_support( 'post-formats', array( 'video', 'image') );
 	add_theme_support( 'title-tag' );
+	add_theme_support( 'custom-logo', array(
+		'height' => 110,
+		'width' => 200
+	) );
 
 }
 add_action( 'after_setup_theme', 'learnwp_config', 0 );
@@ -89,7 +96,7 @@ function learnwp_sidebars(){
 			'before_title' => '<h2 class="widget-title">',
 			'after_title' => '</h2>'
 		)
-	);	
+	);
 	register_sidebar(
 		array(
 			'name' => 'Social Media Icons',
@@ -100,5 +107,5 @@ function learnwp_sidebars(){
 			'before_title' => '<h2 class="widget-title">',
 			'after_title' => '</h2>'
 		)
-	);						
+	);								
 }
