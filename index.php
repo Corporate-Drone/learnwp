@@ -24,11 +24,11 @@
 
 							 <div class="row">
 							 	
-								<div class="pages col-md-6 text-left">
-									<?php previous_posts_link("<< Newer posts"); ?>
+								<div class="pages col-6 text-left">
+									<?php previous_posts_link( __( "<< Newer posts", 'learnwp' ) ); ?>
 								</div>
-								<div class="pages col-md-6 text-right">
-									<?php next_posts_link("Older posts >>"); ?>
+								<div class="pages col-6 text-right">
+									<?php next_posts_link( __( "Older posts >>", 'learnwp' ) ); ?>
 								</div>
 
 							 </div>
@@ -37,7 +37,7 @@
 							 else: 
 							  ?>
 
-							  <p>There's nothing yet to be displayed!</p>
+							  <p><?php _e( 'There&rsquo;s nothing yet to be displayed!', 'learnwp' ); ?></p>
 
 							<?php endif; ?>
 

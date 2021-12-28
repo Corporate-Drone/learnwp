@@ -4,19 +4,19 @@ function learnwp_customizer( $wp_customize ){
 
 	// Copyright
 	$wp_customize-> add_section( 'sec_copyright', array(
-		'title' => 'Copyright',
-		'description' => 'Please, type here your copyright'
+		'title' => __( 'Copyright', 'learnwp' ) ,
+		'description' => __( 'Please, type here your copyright', 'learnwp' )
 	) );
 
 	$wp_customize-> add_setting( 'set_copyright', array(
 		'type' => 'theme_mod',
-		'default' => 'Copyright X - All Rights Reserved',
+		'default' => __( 'Copyright X - All Rights Reserved', 'learnwp' ),
 		'sanitize_callback' => 'esc_attr'
 	) );
 
 	$wp_customize-> add_control( 'ctrl_copyright', array(
-		'label' => 'Copyright Information',
-		'description' => 'Please, type your copyright here.',
+		'label' => __( 'Copyright Information', 'learnwp' ),
+		'description' => __( 'Please, type your copyright here.', 'learnwp' ),
 		'section' => 'sec_copyright',
 		'settings' => 'set_copyright',
 		'type' => 'text'

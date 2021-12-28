@@ -12,7 +12,7 @@
 			</section>
 			<section class="services">
 				<div class="container">
-					<h1>Our Services</h1>
+					<h1><?php _e( 'Our Services', 'learnwp' ); ?></h1>
 					<div class="row">
 						<div class="col-sm-4">
 							<div class="services-item">
@@ -65,7 +65,7 @@
 						</aside>
 						<div class="news col-md-8">
 						<div class="container">
-							<h1>Latest News</h1>
+							<h1><?php _e( 'Latest News', 'learnwp' ); ?></h1>
 							<div class="row">
 								<?php 
 
