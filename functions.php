@@ -3,6 +3,10 @@
 // Requiring Theme Customizer
 require get_template_directory() . '/inc/customizer.php'; 
 
+// Requiring TGM Plugin Activation
+require_once get_template_directory() . '/inc/class-tgm-plugin-activation.php';
+require_once get_template_directory() . '/inc/required-plugins.php';
+
 // Including stylesheet and script files
 function load_scripts(){
 	wp_enqueue_script( 'bootstrap-js', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js', array( 'jquery' ), '4.0.0', true );
